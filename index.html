@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-amaliyot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <img src="mars_logo.png" alt="">
+                <ul>
+                    <img src="Vector (1).png" alt="">
+                    <li>O'zb</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main_start">
+                <img src="mars_logo.png" alt="">
+                <p style="color: #EF400F;">Offerta imzolash</p>
+            </div>
+            <h1>Space hush kelibsiz</h1>
+            <div class="main_item">
+                <div class="left_info">O'quvchiman</div>
+                <div class="right_info">Ota-onaman</div>
+            </div>
+            <div class="main_input">
+                <input type="email" id="main_input-one" style="padding-left: 10px;" placeholder="Modme id or Phone number">
+                <div class="password-container">
+                    <br>
+                    <br>
+                    <input type="password" id="password" placeholder="Password" onkeydown="checkEnter(event)" oninput="updateButtonState()">
+                    <span class="toggle-visibility" onmousedown="showPassword()" onmouseup="hidePassword()" onmouseleave="hidePassword()">
+                        <img src="Eye.png" alt="">
+                    </span>
+                </div>
+                <br>
+                <a href="two.html"><button class="submit-btn" id="submit-btn"  onclick="validateLogin()">Подтвердить</button></a>
+                <p id="error-message" style="color: red; display: none;">Noto'g'ri login yoki parol!</p>
+            </div>
+            <p>QR code orqali kirish</p>
+        </div>
+    </main>
+    
+</body>
+
+</html>

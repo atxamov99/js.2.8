@@ -1,0 +1,174 @@
+/* Umumiy reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background: #FFFFFF;
+    border: 2px solid #DEDBDB;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+ul li {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main {
+    background: #FFFFFF;
+    border: 1px solid #DEDBDB;
+    width: 520px;
+    height: 580px;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.main_start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    padding-top: 45px;
+}
+
+main h1 {
+    color: #0E0D5D;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.main_item {
+    background: #F5F5F5;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 300px;
+    margin-left: 100px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.left_info {
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px #656262;
+}
+
+.main_input {
+    display: grid;
+}
+
+input {
+    background: #FAFAFA;
+    border: 1px solid #75757530;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+input::placeholder {
+    padding-left: 20px;
+}
+
+main p {
+    color: #000000A3;
+    margin-top: 15px;
+}
+
+.main_input input {
+    width: 410px;
+    margin-left: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_input-one::placeholder {
+    font-size: 16px;
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+.password-container input {
+    padding-right: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.password-container .toggle-visibility {
+    position: absolute;
+    top: 75%;
+    right: 85px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    margin-left: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F69E86;
+    color: #fff;
+}
+
+.submit-btn:hover {
+    background-color: #EF400F;
+    transition: 0.5s;
+}
+
+.submit-btn.active {
+    background-color: #EF400F;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input.error {
+    border-color: red;
+}
+
+#error-message {
+    font-size: 14px;
+    margin-top: 10px;
+}
