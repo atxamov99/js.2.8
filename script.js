@@ -4,11 +4,10 @@ const submitButton = document.querySelector('#submit-btn');
 const emailInput = document.querySelector('#main_input-one');
 const errorMessage = document.getElementById('error-message');
 
-// To'g'ri login va parol
-const validLogin = "mars"; // To'g'ri login
-const validPassword = "2022";  // To'g'ri parol
 
-// Sahifani ochish bilan birga login va parolni localStorage'dan tekshiramiz
+const validLogin = "mars"; 
+const validPassword = "2022";  
+
 window.onload = () => {
     const savedLogin = localStorage.getItem("login");
     const savedPassword = localStorage.getItem("password");
@@ -31,14 +30,11 @@ const validateLogin = () => {
     const enteredLogin = emailInput.value;
     const enteredPassword = passwordEye.value;
 
-    // Login va parolni tekshirish
     if (enteredLogin === validLogin && enteredPassword === validPassword) {
-        // Login va parol to'g'ri bo'lsa, localStorage'ga saqlash
         localStorage.setItem("login", enteredLogin);
         localStorage.setItem("password", enteredPassword);
-        window.location.href = "two.html"; // To'g'ri login bo'lsa, ikkinchi sahifaga o'tish
+        window.location.href = "two.html";
     } else {
-        // Xato login yoki parol bo'lsa
         errorMessage.style.display = "block";
         emailInput.classList.add("error");
         passwordEye.classList.add("error");
@@ -57,14 +53,12 @@ const updateButtonState = () => {
     }
 };
 
-// Enter tugmasini bosganda login qilish
 function checkEnter(event) {
     if (event.key === "Enter") {
         validateLogin();
     }
 }
 
-// LocalStorage'dan o'chirish uchun, submit tugmasi bosilganda
 const clearLocalStorage = () => {
     localStorage.removeItem("login");
     localStorage.removeItem("password");
